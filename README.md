@@ -1,12 +1,11 @@
-# React + Vite
+# Tensae Credentials Gallery
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the **Tensae Credentials Gallery**, a visually stunning and interactive 3D gallery showcasing various certificates and achievements. This project is built using **React Three Fiber**, **GSAP**, and **Three.js**, providing an immersive experience with animations and interactivity.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **3D Certificate Gallery**: Displays certificates in a circular layout with smooth animations.
+- **Interactive View**: Click on any certificate to view it in full-screen mode with detailed descriptions.
+- **Auto-Rotate**: The gallery auto-rotates to highlight featured certificates.
+- **Responsive Design**: Adjusts seamlessly to different screen sizes.
+- **Dynamic Animations**: Includes hover effects, floating animations, and spotlight effects for featured certificates.
