@@ -38,7 +38,7 @@ function App() {
               <pointLight position={[10, 10, 10]} intensity={1} />
               <Suspense fallback={null}>
                 <CertificateGallery />
-                <Environment preset="city" />
+                <Environment preset="sunset" />
                 <EffectComposer>
                   <Bloom luminanceThreshold={0.5} luminanceSmoothing={0.9} height={300} />
                 </EffectComposer>
