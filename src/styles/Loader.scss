@@ -1,0 +1,94 @@
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg, #2c001e 0%, #300A24 50%, #5E2750 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    
+    .loader-content {
+      text-align: center;
+      
+      h1 {
+        font-size: 36px;
+        font-weight: 500;
+        margin-bottom: 10px;
+        color: white;
+      }
+      
+      h2 {
+        font-size: 24px;
+        font-weight: 300;
+        margin-bottom: 30px;
+        color: var(--ubuntu-orange);
+      }
+      
+      p {
+        margin-top: 20px;
+        font-size: 16px;
+        color: var(--ubuntu-grey);
+      }
+      
+      .progress-bar {
+        width: 300px;
+        height: 6px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 3px;
+        overflow: hidden;
+        margin: 0 auto;
+        
+        .progress {
+          height: 100%;
+          background-color: var(--ubuntu-orange);
+          transition: width 0.3s ease;
+        }
+      }
+      
+      .ubuntu-dots {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        
+        span {
+          width: 12px;
+          height: 12px;
+          margin: 0 5px;
+          background-color: var(--ubuntu-orange);
+          border-radius: 50%;
+          animation: dotPulse 1.5s infinite;
+          
+          &:nth-child(2) {
+            animation-delay: 0.2s;
+          }
+          
+          &:nth-child(3) {
+            animation-delay: 0.4s;
+          }
+          
+          &:nth-child(4) {
+            animation-delay: 0.6s;
+          }
+          
+          &:nth-child(5) {
+            animation-delay: 0.8s;
+          }
+        }
+      }
+    }
+  }
+  
+  @keyframes dotPulse {
+    0%, 100% {
+      transform: scale(0.7);
+      opacity: 0.5;
+    }
+    50% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
